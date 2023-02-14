@@ -4,16 +4,15 @@ seckill-platform 前端源码
 
 #### 项目源码
 
-|     |   后端源码  |   前端源码  |
-|---  |--- | --- |
-|  github   |  https://github.com/elunez/eladmin   |  https://github.com/elunez/eladmin-web   |
-|  码云   |  https://gitee.com/elunez/eladmin   |  https://gitee.com/elunez/eladmin-web   |
+|     |   后端源码  | 前端源码                                             |
+|---  |--- |--------------------------------------------------|
+|  github   |  https://github.com/402717854/seckill-platform-group   | https://github.com/402717854/seckill-platform-ui |
 
 #### 开发文档
-[https://eladmin.vip](https://eladmin.vip)
+[https://402717854.vip](https://402717854.vip)
 
 #### 体验地址
-[https://eladmin.vip/demo](https://eladmin.vip/demo)
+[https://402717854.vip/demo](https://402717854.vip/demo)
 
 #### 前端模板
 
