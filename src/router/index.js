@@ -23,7 +23,6 @@ router.beforeEach((to, from, next) => {
       NProgress.done()
     } else {
       if (store.getters.roles.length === 0) { // 判断当前用户是否已拉取完user_info信息
-        console.log('adsdasdasd1111112222222')
         store.dispatch('GetInfo').then(() => { // 拉取user_info
           // 动态路由，拉取菜单
           loadMenus(next, to)
@@ -34,7 +33,6 @@ router.beforeEach((to, from, next) => {
         })
       // 登录时未拉取 菜单，在此处拉取
       } else if (store.getters.loadMenus) {
-        console.log('adsdasdasd111111')
         // 修改成false，防止死循环
         store.dispatch('updateLoadMenus')
         loadMenus(next, to)
