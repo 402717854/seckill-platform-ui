@@ -35,6 +35,41 @@ npm run dev
 npm run build:prod
 ```
 
+#### nginx配置
+     server {
+        listen       80;
+        server_name  localhost;
+
+        #charset koi8-r;
+
+        #access_log  logs/host.access.log  main;
+
+        location / {
+            root   dist;
+            #index  index.html index.htm;
+            try_files $uri $uri/ /index.html;
+        }
+
+        #error_page  404              /404.html;
+
+        # redirect server error pages to the static page /50x.html
+        #
+        error_page   500 502 503 504  /50x.html;
+        location = /50x.html {
+            root   html;
+        }
+     }
+
+
+     
+     nginx常用命令
+     ./nginx -t        -- 验证nginx配置文件是否正确
+     ./nginx  --启动
+
+    ./nginx -s stop --关闭
+    
+    ./nginx -s reload --重启
+     
 #### 常见问题
 
 1、linux 系统在安装依赖的时候会出现 node-sass 无法安装的问题
