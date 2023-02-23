@@ -43,11 +43,17 @@ npm run build:prod
         #charset koi8-r;
 
         #access_log  logs/host.access.log  main;
-
+        #访问前端工程
         location / {
             root   dist;
             #index  index.html index.htm;
             try_files $uri $uri/ /index.html;
+        }
+        #后端服务反向代理--负载均衡做准备
+        location /gateway {
+          proxy  http://192.168.66.16:8201
+          root   html;
+          index  index.html index.htm;
         }
 
         #error_page  404              /404.html;
